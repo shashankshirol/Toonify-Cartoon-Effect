@@ -28,3 +28,6 @@ A python implementation of the paper titled, "Toonify: Cartoon Photo Effect Appl
 
 ### Output Image:
 <img src="https://github.com/shashankshirol/Toonify-Cartoon-Effect/blob/master/cartoonized_Tiger.jpg" width="512">
+
+## Code based on:
+<a href="https://stacks.stanford.edu/file/druid:yt916dh6570/Dade_Toonify.pdf">Toonify: Cartoon Photo Effect Application</a>
