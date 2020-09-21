@@ -21,15 +21,8 @@ def Quantize_colors(img, a=24):
 
 #Code:
 
-name = 'Tiger.jpg'
-img = cv.imread(name)
+img = cv.imread(str(sys.argv[1]))
 
-if(len(sys.argv) > 1):
-    scale = int(sys.argv[1])
-    w = int(img.shape[0] * scale / 100)
-    h = int(img.shape[1] * scale / 100)
-
-    img = cv.resize(img, (w, h), interpolation=cv.INTER_AREA)
 
 # Applying median filtering to remove any salt and pepper noise present
 img = cv.medianBlur(img, 7)
@@ -53,9 +46,6 @@ img = Quantize_colors(img)
 img[gray_img==255] = [0, 0, 0]
 
 # Cartoonized image
-cv.imshow('Cartoonized Image', img)
-cv.waitKey()
-
-cv.imwrite('cartoonized_'+name, img)
+cv.imwrite('cartoonized_'+str(sys.argv[1]), img)
 
 cv.destroyAllWindows()

@@ -7,7 +7,7 @@ A python implementation of the paper titled, "Toonify: Cartoon Photo Effect Appl
 
 ## Running the script:
 
-`$ py toonify.py <optional_scaling_percent>`
+`$ py toonify.py <input_img>`
 
 ## Examples:
 
